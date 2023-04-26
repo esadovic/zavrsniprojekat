@@ -1,6 +1,6 @@
 function onNavChange(nav) {
     //ako je nav zapravo nav-home
-    if (nav== 'nav-home') {
+    if (nav == 'nav-home') {
         //prikazi home
         document.getElementById('home').style.display = "block"; //prikazi se
         document.getElementById('gallery').style.display = "none";
@@ -17,7 +17,7 @@ function onNavChange(nav) {
         //prikazi gallery
     } else if (nav == 'nav-gallery') {
       document.getElementById('home').style.display = "none"; 
-      document.getElementById('gallery').style.display = "block";//prikazi se
+      document.getElementById('gallery').style.display = "block"; //prikazi se
       document.getElementById('blog').style.display = "none";
       document.getElementById('about').style.display = "none";
       document.getElementById('contact').style.display = "none";
@@ -57,7 +57,7 @@ function onNavChange(nav) {
         document.getElementById('nav-contact').classList.remove('active');
     }
      //prikazi contact
-    } else if (nav == 'nav-contact') {
+     else if (nav == 'nav-contact') {
       document.getElementById('home').style.display = "none";
       document.getElementById('gallery').style.display = "none";
       document.getElementById('blog').style.display = "none";
@@ -70,6 +70,7 @@ function onNavChange(nav) {
       document.getElementById('nav-about').classList.remove('active');
       document.getElementById('nav-contact').classList.add('active');
   }
+}
 
 
 let slideIndex = 1;
