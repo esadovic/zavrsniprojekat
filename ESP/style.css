@@ -125,6 +125,7 @@ font-family: 'Josefin Sans', sans-serif;
 .hero-text p {
     padding-left: 70px;
     line-height: 25px;
+    text-align: justify;
 }
 
 .hero-text span {
@@ -195,90 +196,171 @@ font-family: 'Josefin Sans', sans-serif;
 
 }
 
-/*Gallery*/
-/* Position the image container (needed to position the left and right arrows) */
-.img-container {
-  position: relative;
+/*Galery css2*/
+
+/*.wrapper {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+.slider {
+	width: 640px;
+	position: relative;
+	padding-top: 320px;
+	margin: 20px auto;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+.slider>img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: all 0.5s;
+}
+.slider input[name='ani'] {
+	display: none;
+}
+.slider label {
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+.slider label img {
+	display: block;
+}
+.slider input[name='ani']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+.slider input[name='ani']~img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.slider input[name='ani']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+*/
+
+
+/*Gallery css 1*/
+
+ .intro { 
+  text-align: center; 
+  font-family: Arial;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+h2 { 
+  font-size: 36px;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
+p { 
+  font-size: 14pt;
+}
+
+#image-gallery { 
+  width: 600px; 
+  margin: 0 auto;
+}
+
+#current-image { 
+  width: 100%;
+} 
+
+#image-thumbs { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.thumb { 
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  margin-right: 10px; 
   cursor: pointer;
+} 
+
+/*About image css*/
+.about-image {
+    width: 49%;
+    height: 50%;
+    float: right;
+    text-align: center;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+/*Blog css*/
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
+#left {
+  width: 540px;
   float: left;
-  width: 16.66%;
+  padding: 30px 25px;   
 }
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
+.article {
+  margin: 0 0 50px 0;
 }
-
-.active,
-.demo:hover {
-  opacity: 1;
+.article .text p {
+  margin: 15px 0;
+  line-height: 160%;
+  font-size: 13px;
+  color: rgb(66,66,66)
 }
-
+.article .top .calendar{
+  width: 42px;
+  height: 47px;
+  float: left;
+  background: url('images/calendar.png') rgb(150,150,150);
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 2px 0 0;
+  margin: 5px 8px 5px 0;
+  color: rgb(255,255,255);     
+}
+.article .top .calendar span {
+  display: block;
+  text-align: center;      
+  font-size: 18px;
+  color: rgb(66,66,66);
+  padding-top: 5px;      
+}
+.article h2 {            
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 23px;    
+  background: url('images/border-headline.png') no-repeat bottom right;  
+}
+.article h2 a{
+  color: rgb(66,66,66);
+  text-decoration: none;
+}
+.article h2 a:hover {
+  color: rgb(255,102,0);
+} 
+.info {      
+  margin: 2px 0 40px 0;
+  padding: 0;      
+}
+.info .category {
+  float: left;
+  padding-left: 25px;      
+  margin-left: 5px;
+  background: url('images/category.png') no-repeat left;
+}
+.info .comments {
+  float: right;
+  padding-left: 25px;
+  background: url('images/comment.png') no-repeat left;
+}
+.info .category a, .info .comments a {
+  color: rgb(218,112,42);
+  text-decoration: none;
+}
+.info .category a:hover, .info .comments a:hover {
+  text-decoration: underline;
+}
 
 /*Kontakt forma*/
 $teal:#00b4cf;
@@ -299,7 +381,7 @@ body {
 }
 
 .contact-container {
-	background-color: $white;
+	background-color: whitesmoke;
 	border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 	0 10px 10px rgba(0,0,0,0.22);
@@ -326,6 +408,7 @@ h2 {
   height:480px;
   background-color:$teal;
 }
+
 .right-container {
   display:flex;
   flex:1;
@@ -415,7 +498,7 @@ form p {
 
 footer {
   text-align: center;
-  size: 8px;
+  font-size: 16px;
   padding: 3px;
   background-color: #2c97e4;
   color: white;
@@ -423,7 +506,7 @@ footer {
 }
 
 .text-italic {
-    font-style: italic;
-    size: 4px;
+  font-style: italic;
+  font-size: 16px;
 }
 

@@ -15,7 +15,7 @@
      <div class="wrapper">
         <div class="top-bar">
             <div class="logo"> 
-                <img src="./images/logo2.png">
+                <a href="#home"><img src="images/logo4.png"></a>              
             </div>
             <div class="nav-bar">
                 <ul>
@@ -48,88 +48,117 @@
                 </div >
             </section>
             <section id="gallery"> 
-                <!-- <h2 style="text-align:center">Slideshow Gallery</h2> -->
-                <!-- Container for the image gallery -->
-                 <div class="img-container">
+   <!--            <div class="wrapper">
+                <div class="boxes">
+                    <div class="slider">
+                        <input checked="checked" id="id1" name="ani" type="radio"> 
+                        <label for="id1"><img src="img/1.jpg" width="100"></label> 
+                        <img src="img/1.jpg">
+    
+                        <input id="id2" name="ani" type="radio"> 
+                        <label for="id2"><img src="img/2.jpg" width="100"></label> 
+                        <img src="img/2.jpg"> 
+                            
+                        <input id="id3" name="ani" type="radio"> 
+                        <label for="id3"><img src="img/3.jpg" width="100"></label> 
+                        <img src="img/3.jpg"> 
+                        
+                        <input id="id4" name="ani" type="radio"> 
+                        <label for="id4"><img src="img/4.jpg" width="100"></label> 
+                        <img src="img/4.jpg"> 
+                        
+                        <input id="id5" name="ani" type="radio"> 
+                        <label for="id5"><img src="img/5.jpg" width="100"></label> 
+                        <img src="img/5.jpg"></div>
+                </div>
+            </div> -->
 
-                <!-- Full-width images with number text -->
-                <div class="mySlides">
-                <div class="numbertext">1 / 6</div>
-                    <img src="./images/img_woods_wide.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                <div class="numbertext">2 / 6</div>
-                    <img src="./images/img_5terre_wide.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                <div class="numbertext">3 / 6</div>
-                    <img src="./images//img_mountains_wide.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                <div class="numbertext">4 / 6</div>
-                    <img src="./images/img_lights_wide.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                <div class="numbertext">5 / 6</div>
-                    <img src="./images/img_nature_wide.jpg" style="width:100%">
-                </div>
-            
-                <div class="mySlides">
-                <div class="numbertext">6 / 6</div>
-                    <img src="./images/img_snow_wide.jpg" style="width:100%">
-                </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                <!-- Image text -->
-                <div class="caption-container">
-                <p id="caption"></p>
-                </div>
-            
-                <!-- Thumbnail images -->
-                <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./images/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                </div>
-                </div>
-            </div>
+
+
+                 <div class="intro"> 
+                  <br>
+                    <p>Kliknite na sličicu, da biste je videli u punoj rezoluciji</p> 
+                    <br>
+                    <div id="image-gallery">
+                      <img id="current-image" src="images/image1.jpg" alt="Image 1">
+                    <div id="image-thumbs">
+                        <img src="images/image1.jpg" alt="Image 1" class="thumb">
+                        <img src="images/image2.jpg" alt="Image 2" class="thumb">
+                        <img src="images/image3.jpg" alt="Image 3" class="thumb">
+                        <img src="images/image4.jpg" alt="Image 4" class="thumb">
+                        <img src="images/image5.jpg" alt="Image 5" class="thumb">
+                        <img src="images/image6.jpg" alt="Image 6" class="thumb">
+                        <img src="images/image7.jpg" alt="Image 7" class="thumb">
+                        <img src="images/image8.jpg" alt="Image 8" class="thumb">
+                        <img src="images/image9.jpg" alt="Image 9" class="thumb">
+                        <img src="images/image10.jpg" alt="Image 10" class="thumb"> 
+                    </div> 
+                    </div>
+                  </div> 
+               
             </section>
+             
             
             <section id="blog">
-                <h2>Blog</h2>
-                <div>
-                    <p class="text">Moje ime je Emir Sadovic.</p>
-                    <p>Ovde ide blog postovi</p>
+            <div id="left">
+                <div class="article">
+                    <div class="top">
+                        <h1>Blog</h1>
+                        <br>
+                      <p class="calendar">APR <span>28</span></p>
+                      <h2><a href="https://www.google.com/">Izbor i obrada fotografije u pet jednostavnih koraka</a></h2>
+                      <p class="info"> <span class="category"><a href="https://www.google.com/">Category</a></span> <span class="comments"><a href="https://www.google.com/">15 comments</a></span> </p>
+                    </div>
+                    <div class="text">
+                      <p> Izbor i obrada fotografije, zadatak je koji ponavljamo kod svake nove objave na blogu. Ljubitelji dobre fotografije obično ga obavljaju sa radošću.e</a></p>
+                      <p> Lični stil, sklonosti i ukus bitno razlikuju ove izbore kod različitih blogera. Neko će želeti više fotografija raspoređenih duž teksta, neko foto-galeriju sa nekoliko fotografija u nizu. Možda je ilustracija (crtež) ili infografika vaš izbor. Tema bloga, odnosno konkretnog posta takođe je važan faktor za izbor i upotrebu fotografija. </p>
+                      <p> <a href="https://www.google.com/">Read more...</a> </p>
+                    </div>
+                  </div>
+                  <div class="article">
+                    <div class="top">
+                      <p class="calendar">APR <span>14</span></p>
+                      <h2><a href="https://www.google.com/">Brzina učitavanja - sve važniji faktor za rangiranje sajta</a></h2>
+                      <p class="info"> <span class="category"><a href="https://www.google.com/">Category</a></span> <span class="comments"><a href="https://www.google.com/">17 comments</a></span> </p>
+                    </div>
+                    <div class="text">
+                      <p> Brzina učitavanja sajta od presudne je važnosti za uspeh web prezentacije. Na sporost učitavanja veoma loše reaguju posetioci ali i algoritmi pretraživača. Čak i sajtovi sa odličnim sadržajem, mnoštvom dobrih i optimizovanih ključnih reči, povratnih linkova, mogu ozbiljno „stradati“ od presporog učitavanja stranica. </p>
+                      <p>SEO vašeg sajta, ako je njegova brzina učitavanja loša, osuđena je unapred na propast, a vaš sajt posećivaće samo retki, zalutali putnici namernici.</p>
+                      <p> <a href="https://www.google.com/">Read more...</a> </p>
+                    </div>
+                  </div>
+                  <div class="article">
+                    <div class="top">
+                      <p class="calendar">NOV <span>10</span></p>
+                      <h2><a href="https://www.google.com/">Fotografija od ukrasa do tereta - foto galerija „ubica sajta“</a></h2>
+                      <p class="info"> <span class="category"><a href="https://www.google.com/">Category</a></span> <span class="comments"><a href="https://www.google.com/">53 comments</a></span> </p>
+                    </div>
+                    <div class="text">
+                      <p> Fotografija od ukrasa do tereta je tekst-primer loše prakse i govori čega se trebamo čuvati. Kombinacija nekoliko pogrešnih ili izostavljenih radnji dovela je do praktičnog prestanka rada sajta. Analiza ovog slučaja tu je da pomogne konkretnom adminu sajta, u rešavanju problema ali i da posluži kao primer „učenja na greškama“ nekim budućim administratorima malih sajtova, ličnih blogova… </p>
+                      <p> Današnja studija slučaja, bukvalno je današnja (problem u toku) i istinita. Galerija „sirovih“, sa smartfona prebačenih, nesmanjenih fotografija, doslovno je sajt učinila neupotrebljivim. Sa dodatim poslednjim postom i kompletnom galerijom (102 fotografije) početnoj stranici sajta potrebno je više od minuta da se učita. Ovo naravno samo pod uslovom, da posetilac ili pretraživač „ne puknu“ pre toga. Softver za testiranje (GTmetrix) jeste, malo posle trećine stranice. </p>
+                      <p> <a href="https://www.google.com/">Read more...</a> </p>
+                    </div>
+                  </div>
                 </div>
             </section>
             <section id="about">
-                    <div>
-                    <p class="text">Moje ime je Emir Sadovic.</p>
-                    <p class="text">Photojournalist, wedding and sport photographer. I am located in Novi Pazar, Serbia.</p>
-                    <p class="text">Po zanimanju sam diplomirani inzenjer informatike, ali od momenta završetka fakulteta, pa do sad, </p>
-                </div>
-            </section>
+                    <div class="hero-text">
+                    <h1>About me</h1>
+                    <p class="text">Fotoreporter, sportski i fotograf venčanja.</p>
+                    <br>
+                    <p class="text">Rođen sam 1986. godine u Novom Pazaru. Diplomirao sam na Internacionalnom Univerzitetu u Novom Pazaru 2011-te godine, na Fakultetu za informatiku i informacione tehnologije. 
+                        Fotografijom se ozbiljnije bavim od 2009-te godine. Radio sam kao dopisnik dva naša najeminentnija sportska lista: “Sportski Žurnal“ i “Sport“. 
+                        Danas radim kao freelence fotograf i fotoreporter-saradnik za sportsku foto agenciju “StarSport“. 
+                        Učesnik sam par grupnih izložbi na temu sportske fotografije u Novom Pazaru.</p>
+                        <p>Najviše volim da dokumentujem emocije i pokret, otuda i najveća želja da spojim sport i venčanja na jednom mestu.</p>
+                        <br>
+                        <p>Oženjen sam, i otac sam dve devojčice.</p>
+                    </div>
+                
+                    <div class="about-image">
+                    <img src="./images/emir.jpg">
+                    </div >
+                </section>
 
             <section id="contact"> 
                     <div>
@@ -137,7 +166,7 @@
                         <div class="form-container">
                           <div class="left-container">
                             <div class="left-inner-container">
-                            <h2 class="h2-orange">Contact info</h2>
+                            <h2>Podaci za kontakt:</h2>
                             <p>Emir Sadović</p>
                             <p>Ulica 28. Novembra 54</p>
                             <p>36300, Novi Pazar</p>
@@ -147,25 +176,25 @@
                               <br>
                               <p>Phone:</p> 
                               <p>+381 64 011 46 44</p>
-                              
-                          </div>
+                            </div>
                             </div>
                           <div class="right-container">
                             <div class="right-inner-container">
                               <form action="#">
-                                  <h2 class="lg-view">Contact</h2>
+                                  <h2 class="lg-view">Popunite kontakt formu</h2>
+                                  <br>
                             <h2 class="sm-view">Let's Chat</h2>
-                                 <p>* Required</p>
+                                 <p>* Obavezno polje:</p>
                                   <div class="social-container">
                                       <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                                       <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                                       <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                                   </div>
-                                  <input type="text" placeholder="Name *"  />
-                                  <input type="email" placeholder="Email *" />
-                                  <input type="text" placeholder="Company" />
-                                  <input type="phone" placeholder="Phone" />
-                                  <textarea rows="4" placeholder="Message"></textarea>
+                                  <input type="text" placeholder="Ime: *"  />
+                                  <input type="email" placeholder="E-mail: *" />
+                                  <input type="text" placeholder="Kompanija:" />
+                                  <input type="phone" placeholder="Telefon:" />
+                                  <textarea rows="4" placeholder="Poruka:"></textarea>
                                   <button>Submit</button>
                               </form>
                             </div>
@@ -188,7 +217,8 @@
             </ul>
        
      <footer class="footer">
-        <p> &copy; Emir Sadović Photography | <span class="text-italic "> Created by Emir Sadović</span> | All Rights Reserved</p>
+       <span> &copy; Copyright 2023 | <a class="text-italic">by Emir Sadović. </a> All rights reserverd. </span> 
+
      </footer>
 </body>
 </html>
